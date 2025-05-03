@@ -1,0 +1,29 @@
+{
+  "name": "deckgl-particle",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "scripts": {
+    "start": "vite --open",
+    "start-local": "vite --config ../../vite.config.local.mjs",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@deck.gl/core": "^9.1.0",
+    "@deck.gl/layers": "^9.1.0",
+    "@deck.gl/react": "^9.1.0",
+    "@luma.gl/core": "^9.1.0",
+    "@luma.gl/engine": "^9.1.0",
+    "@luma.gl/shadertools": "^9.1.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "maplibre-gl": "^3.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-map-gl": "^7.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.0",
+    "vite": "^4.0.0"
+  }
+}
