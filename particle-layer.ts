@@ -1,9 +1,8 @@
-import { Color, DefaultProps, LayerContext } from "@deck.gl/core";
+import { Color, DefaultProps, LayerContext, UpdateParameters } from "@deck.gl/core";
 import { LineLayer, LineLayerProps } from "@deck.gl/layers";
 import { Buffer, Texture } from "@luma.gl/core";
 import { Model, BufferTransform } from "@luma.gl/engine";
 import shader from "./particle-layer-update-transform.vs.glsl.js";
-import { UpdateParameters } from "deck.gl";
 import { ShaderModule } from "@luma.gl/shadertools";
 
 // Shader Module
@@ -421,9 +420,7 @@ export default class ParticleLayer<
       initialized: false,
       sourcePositions: undefined,
       targetPositions: undefined,
-      sourceColors: undefined,
-      targetColors: undefined,
-      opacities: undefined,
+      colors: undefined,
       transform: undefined,
     });
   }
