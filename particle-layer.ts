@@ -363,7 +363,13 @@ export default class ParticleLayer<
       seed: Math.random(),
     };
     transform.model.shaderInputs.setProps({ bitmap: moduleUniforms });
-    transform.run();
+    transform.run({
+      clearColor: false,
+      clearDepth: false,
+      clearStencil: false,
+      depthReadOnly: true,
+      stencilReadOnly: true,
+    });
 
     // As discussed in _setupTransformFeedback()
     // We copy the buffer across, but shift everything down 'one age'.
